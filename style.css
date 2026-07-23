@@ -243,6 +243,40 @@ body {
 }
 
 /* ---------- MENU (with order buttons) ---------- */
+.view-more-btn {
+    background: #8B5E3C;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    background: #A36A43;
+}
+
+.view-more-btn {
+    background: #8B5E3C;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    background: #A36A43;
+}
+
 .menu-title {
     font-size: 20px;
     text-align: center;
@@ -331,6 +365,66 @@ body {
     font-weight: 700;
     color: #6F4E37;
     margin: 10px 0;
+}
+
+.expanded-menu-modal .modal-content {
+    border-radius: 20px;
+    border: none;
+}
+
+.expanded-item-card {
+    border: 1px solid #e9dcc9;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.expanded-item-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.expanded-item-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.expanded-item-body h6 {
+    color: #C89447;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.expanded-item-body p {
+    font-size: 0.95rem;
+    color: #6F4E37;
+    margin: 0;
+    flex: 1;
+}
+
+.expanded-item-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.expanded-item-meta span {
+    font-weight: 700;
+    color: #6F4E37;
+}
+
+.expanded-item-meta .btn-order {
+    padding: 7px 16px;
+    font-size: 12px;
 }
 
 /* Order button & quantity controls */
@@ -724,7 +818,7 @@ footer {
     }
 
     .menu-divider {
-        margin-left: 12%;
+        margin-left: 15%;
     }
 
     .menu .card {
