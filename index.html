@@ -150,6 +150,10 @@
           </div>
         </div>
       </div>
+
+      <div class="text-center mt-3">
+        <button class="view-more-btn" id="viewMoreBtn">View More</button>
+      </div>
     </div>
   </section>
 
@@ -210,7 +214,7 @@
               <p class="card-text">The best coffee in town! The ambience <br>is so cozy and the staff is super friendly.</p>
               <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
               <div class="details">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%238B5E3C'/%3E%3C/svg%3E" class="details-img" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUF2JgnB2Uko5hHnNoxj9oS5a_ZHcIQFsiNm9E_AQRQJ1d6-akRj_yCs&s=10" class="details-img" alt="">
                 <div class="details-name">- Priya S.</div>
               </div>
             </div>
@@ -223,7 +227,7 @@
               <p class="card-text">Absolutely love their cappuccino and <br>mocha A perfect place to unwind.</p>
               <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
               <div class="details">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%236F4E37'/%3E%3C/svg%3E" class="details-img" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2fchdGhsSh3cZdzSuwcuBB65EOEZ2SyWp8HRcHAX6ytrRjXdGAfLNRoVV&s=10" class="details-img" alt="">
                 <div class="details-name">- Rahul M.</div>
               </div>
             </div>
@@ -236,7 +240,7 @@
               <p class="card-text">Cafè Aròma has become my go-to <br>spot for coffee and peace.</p>
               <div class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
               <div class="details">
-                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23A36A43'/%3E%3C/svg%3E" class="details-img" alt="">
+                <img src="https://st2.depositphotos.com/13166358/42123/i/450/depositphotos_421230578-stock-photo-smiling-young-indian-lady-looking.jpg" class="details-img" alt="">
                 <div class="details-name">- Anjali K.</div>
               </div>
             </div>
@@ -245,6 +249,128 @@
       </div>
     </div>
   </section>
+
+  <!-- ========== EXPANDED MENU MODAL ========== -->
+  <div class="modal fade expanded-menu-modal" id="expandedMenuModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">☕ More From Our Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="expanded-item-card">
+                <img src="images/img1.avif" alt="Latte">
+                <div class="expanded-item-body">
+                  <h6>Velvet Latte</h6>
+                  <p>Rich espresso layered with silky steamed milk.</p>
+                  <div class="expanded-item-meta">
+                    <span>₹160</span>
+                    <button class="btn-order" data-id="4" data-name="Velvet Latte" data-price="160" data-image="images/img1.avif">Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="expanded-item-card">
+                <img src="images/img3.avif" alt="Cold Brew">
+                <div class="expanded-item-body">
+                  <h6>Midnight Cold Brew</h6>
+                  <p>Bold cold brew with a smooth, refreshing finish.</p>
+                  <div class="expanded-item-meta">
+                    <span>₹190</span>
+                    <button class="btn-order" data-id="5" data-name="Midnight Cold Brew" data-price="190" data-image="images/img3.avif">Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="expanded-item-card">
+                <img src="images/img4.avif" alt="Hazelnut Mocha">
+                <div class="expanded-item-body">
+                  <h6>Hazelnut Mocha</h6>
+                  <p>Chocolatey espresso with roasted hazelnut aroma.</p>
+                  <div class="expanded-item-meta">
+                    <span>₹210</span>
+                    <button class="btn-order" data-id="6" data-name="Hazelnut Mocha" data-price="210" data-image="images/img4.avif">Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="expanded-item-card">
+                <img src="images/cafe-interior.avif" alt="Affogato">
+                <div class="expanded-item-body">
+                  <h6>Classic Affogato</h6>
+                  <p>Vanilla ice cream crowned with hot espresso.</p>
+                  <div class="expanded-item-meta">
+                    <span>₹180</span>
+                    <button class="btn-order" data-id="7" data-name="Classic Affogato" data-price="180" data-image="images/cafe-interior.avif">Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-md-6">
+              <div class="expanded-item-card">
+                <img src="images/img1.avif" alt="Latte">
+                <div class="expanded-item-body">
+                  <h6>Velvet Latte</h6>
+                  <p>Rich espresso layered with silky steamed milk.</p>
+                  <div class="expanded-item-meta">
+                    <span>₹160</span>
+                    <button class="btn-order" data-id="4" data-name="Velvet Latte" data-price="160" data-image="images/img1.avif">Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="expanded-item-card">
+                <img src="images/img3.avif" alt="Cold Brew">
+                <div class="expanded-item-body">
+                  <h6>Midnight Cold Brew</h6>
+                  <p>Bold cold brew with a smooth, refreshing finish.</p>
+                  <div class="expanded-item-meta">
+                    <span>₹190</span>
+                    <button class="btn-order" data-id="5" data-name="Midnight Cold Brew" data-price="190" data-image="images/img3.avif">Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="expanded-item-card">
+                <img src="images/img4.avif" alt="Hazelnut Mocha">
+                <div class="expanded-item-body">
+                  <h6>Hazelnut Mocha</h6>
+                  <p>Chocolatey espresso with roasted hazelnut aroma.</p>
+                  <div class="expanded-item-meta">
+                    <span>₹210</span>
+                    <button class="btn-order" data-id="6" data-name="Hazelnut Mocha" data-price="210" data-image="images/img4.avif">Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="expanded-item-card">
+                <img src="images/cafe-interior.avif" alt="Affogato">
+                <div class="expanded-item-body">
+                  <h6>Classic Affogato</h6>
+                  <p>Vanilla ice cream crowned with hot espresso.</p>
+                  <div class="expanded-item-meta">
+                    <span>₹180</span>
+                    <button class="btn-order" data-id="7" data-name="Classic Affogato" data-price="180" data-image="images/cafe-interior.avif">Order</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ========== DETAIL MODAL ========== -->
   <div class="modal fade detail-modal" id="detailModal" tabindex="-1" aria-hidden="true">
@@ -423,6 +549,11 @@
     const detailModal = new bootstrap.Modal(document.getElementById('detailModal'));
     let currentProduct = {};
 
+    const expandedMenuModal = new bootstrap.Modal(document.getElementById('expandedMenuModal'));
+    document.getElementById('viewMoreBtn').addEventListener('click', function() {
+      expandedMenuModal.show();
+    });
+
     document.querySelectorAll('.btn-order').forEach(btn => {
       btn.addEventListener('click', function(e) {
         e.stopPropagation();
@@ -430,23 +561,23 @@
         const id = this.dataset.id;
         const name = this.dataset.name;
         const price = parseInt(this.dataset.price, 10);
+        const image = this.dataset.image || '';
 
-        // Get quantity from the card
-        const card = this.closest('.card');
-        const qtySpan = card.querySelector('.qty-value');
-        const qty = parseInt(qtySpan.textContent, 10) || 1;
+        const sourceCard = this.closest('.card') || this.closest('.expanded-item-card');
+        const qtySpan = sourceCard?.querySelector('.qty-value');
+        const qty = qtySpan ? (parseInt(qtySpan.textContent, 10) || 1) : 1;
 
-        // Set modal data
         currentProduct = { id, name, price, qty };
 
         document.getElementById('detailName').textContent = name;
         document.getElementById('detailDesc').textContent = 'Handcrafted with premium ingredients.';
-        document.getElementById('detailImg').src = card.querySelector('img').src;
+        document.getElementById('detailImg').src = image || sourceCard?.querySelector('img')?.src || '';
 
         modalQty = qty;
         modalQtyValue.textContent = qty;
         updateModalPrice();
 
+        expandedMenuModal.hide();
         detailModal.show();
       });
     });
